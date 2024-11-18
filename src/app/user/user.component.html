@@ -5,11 +5,14 @@
 <!--    [alt]="selectedUser.name"/>-->
 
 <!--property binding using better approach-->
-    <img [src]=" imagePath"
-      [alt]="selectedUser.name"/>
-
+    <img [src]=" imagePath()"
+      [alt]="selectedUser().name"/>
+<!--imagePath er por () hbe for using signals-->
 <!--    interpolation-->
-  <span>{{selectedUser.name}}</span>
+<!--  <span>{{selectedUser.name}}</span>-->
+    <span>{{selectedUser().name}}</span>
+<!--    add parenthesis for  signals-->
+
   </button>
 </div>
 
